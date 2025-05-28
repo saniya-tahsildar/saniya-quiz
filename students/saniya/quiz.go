@@ -30,7 +30,7 @@ func main() {
 	}
 
 	correctanswer := 0
-	fmt.Println("Press Enter to start the quiz")
+	fmt.Println("There is a timer and it starts once you press Enter to start the quiz")
 	fmt.Scanln()
 
 	// set the timer
@@ -58,7 +58,7 @@ func main() {
 			return
 		case answer := <-answerCh:
 			{
-				if record[1] == answer {
+				if record[i] == answer {
 					correctanswer = correctanswer + 1
 					fmt.Printf("Correct answer\n")
 				} else {
