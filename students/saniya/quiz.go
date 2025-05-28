@@ -58,7 +58,7 @@ func main() {
 			return
 		case answer := <-answerCh:
 			{
-				if record[i] == answer {
+				if record[1] == answer {
 					correctanswer = correctanswer + 1
 					fmt.Printf("Correct answer\n")
 				} else {
